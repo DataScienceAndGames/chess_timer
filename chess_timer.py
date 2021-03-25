@@ -37,7 +37,7 @@ class Turn:
 turn = Turn()
 
 def time_down():    
-    times = [[0,10.0],[0,10.0]]
+    times = [[10,0.0],[10,0.0]]
     turn.active = 0
     while(not some_negative(times)):
         times[turn.active] = one_down(times[turn.active])
