@@ -18,7 +18,6 @@ def some_negative(arr):
             return True
     return False
 
-
 def one_down(tup):
     if tup[1]<=0:
         tup[0]-=1
@@ -30,18 +29,15 @@ def one_down(tup):
 class Over:
     def __init__(self):
         self.isOver = False
-
 over = Over()
+
 class Turn:
     def __init__(self):
         self.active = 0
 turn = Turn()
+
 def time_down():    
     times = [[0,10.0],[0,10.0]]
-
-
-    
-    
     turn.active = 0
     while(not some_negative(times)):
         times[turn.active] = one_down(times[turn.active])
